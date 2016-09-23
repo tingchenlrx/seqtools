@@ -104,8 +104,8 @@ case $1 in
 		cd ./NCBI_GRCh38
 		wget -c -O common_all_20160527.vcf.gz ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606_b147_GRCh38p2/VCF/GATK/common_all_20160527.vcf.gz
 		wget -c -O common_all_20160527.vcf.gz.tbi ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606_b147_GRCh38p2/VCF/GATK/common_all_20160527.vcf.gz.tbi
-		(checkfile common_all_20160527.vcf.gz
-		(checkfile common_all_20160527.vcf.gz.tbi
+		checkfile common_all_20160527.vcf.gz
+		checkfile common_all_20160527.vcf.gz.tbi
 		;;
 	"UCSC_hg38")
 		cd ./BRB_SeqTools_autosetup_reference_genome_files
