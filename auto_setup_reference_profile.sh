@@ -121,7 +121,7 @@ case $1 in
 		;;
 	"UCSC_hg19") 
 		cd ./BRB_SeqTools_autosetup_reference_genome_files		
-		(downloadIGenomes UCSC hg19
+		downloadIGenomes UCSC hg19
 		rm ./Homo_sapiens_UCSC_hg19.tar.gz
 		cd ./dbSNP_VCF
 		mkdir -p ./UCSC_hg19
