@@ -76,13 +76,14 @@ echo "Bowtie2 pre-built index files have been downloaded successfully."
 
 }
 
-echo `date +'%Y-%m-%d %T'` >> "$2/BRB_SeqTools_autosetup_reference_genome_files/wget_log.txt"
+
 
 mountavfs
 
 cd $2
 
 if [ -f "$2/BRB_SeqTools_autosetup_reference_genome_files/wget_log.txt" ]; then rm "$2/BRB_SeqTools_autosetup_reference_genome_files/wget_log.txt"; fi;
+echo `date +'%Y-%m-%d %T'` >> "$2/BRB_SeqTools_autosetup_reference_genome_files/wget_log.txt"
 #Create a folder
 mkdir -p ./BRB_SeqTools_autosetup_reference_genome_files
 mkdir -p ./BRB_SeqTools_autosetup_reference_genome_files/dbSNP_VCF
