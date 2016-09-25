@@ -11,4 +11,6 @@ cd $2
 #if [ -f "$2/log_$1.txt" ]; then rm "$2/log_$1.txt"; fi;
 if [ -f test.txt ]; then exit 5; fi;
 if [! -f test.txt ]; then exit 6; fi;
-mkdir hello)  2>&1 | tee -a "$2/log_$1.txt"
+mkdir hello
+exit 7
+)  2>&1 | tee -a "$2/log_$1.txt"
