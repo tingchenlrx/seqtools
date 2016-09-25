@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x
-if [ -f "$2/log_$1.txt" ]; then rm "$2/log_$1.txt"; fi
+#if [ -f "$2/log_$1.txt" ]; then rm "$2/log_$1.txt"; fi
 (
 echo $1
 echo $2
