@@ -13,4 +13,4 @@ cd $2
 if [ -f test.txt ]; then exit 5; fi;
 if [ ! -f test.txt ]; then exit 6; fi;
 mkdir hello
-exit 7)  2>&1 | tee -a "$2/log_$1.txt"
+exit 7;)  2>&1 | tee -a "$2/log_$1.txt"
